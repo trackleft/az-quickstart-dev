@@ -1,2 +1,2 @@
 # az-quickstart-dev
-Dev dependencies for AZ Quickstart projects.
+Composer require-dev dependencies for AZ Quickstart projects.

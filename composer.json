@@ -1,0 +1,20 @@
+{
+    "name": "az-digital/az-quickstart-dev",
+    "type": "metapackage",
+    "description": "Composer require-dev dependencies for AZ Quickstart projects.",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Arizona Digital",
+            "homepage": "https://digital.arizona.edu/",
+            "role": "Team"
+        }
+    ],
+    "require": {
+        "dealerdirect/phpcodesniffer-composer-installer": "0.6.2",
+        "drupal/core-dev-pinned": "*",
+        "mglaman/drupal-check": "1.1.2",
+        "pheromone/phpcs-security-audit": "dev-master#1b8a61d4ac8f4f1554bcbf67865f8e1c1b213bdd",
+        "sensiolabs/security-checker": "6.0.3"
+    }
+}
