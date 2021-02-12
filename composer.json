@@ -15,8 +15,7 @@
         "drupal/core-dev-pinned": "*",
         "mglaman/drupal-check": "1.1.2",
         "pheromone/phpcs-security-audit": "dev-main",
-        "phpcompatibility/php-compatibility": "9.3.5",
-        "sensiolabs/security-checker": "6.0.3"
+        "phpcompatibility/php-compatibility": "9.3.5"
     },
     "extra": {
         "branch-alias": {
