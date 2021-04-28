@@ -18,6 +18,7 @@
         }
     ],
     "require": {
+        "composer/composer": "2.0.13 as 2.0.2",
         "dealerdirect/phpcodesniffer-composer-installer": "0.7.0",
         "drupal/core-dev-pinned": "*",
         "liuggio/fastest": "1.7.1",
