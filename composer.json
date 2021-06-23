@@ -19,6 +19,8 @@
     ],
     "require": {
         "dealerdirect/phpcodesniffer-composer-installer": "0.7.0",
+        "drupal/console": "1.9.7",
+        "drupal/console-dotenv": "0.3.1",
         "drupal/core-dev-pinned": "*",
         "liuggio/fastest": "1.7.1",
         "mglaman/drupal-check": "1.1.2",
