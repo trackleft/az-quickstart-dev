@@ -20,6 +20,8 @@
     "require": {
         "dealerdirect/phpcodesniffer-composer-installer": "0.7.0",
         "drupal/core-dev-pinned": "*",
+        "drupal/devel": "4.1.1",
+        "raveren/kint": "3.1",
         "liuggio/fastest": "1.7.1",
         "mglaman/phpstan-drupal": "0.12.10",
         "pheromone/phpcs-security-audit": "dev-main",
