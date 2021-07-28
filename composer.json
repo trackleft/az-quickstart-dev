@@ -22,6 +22,7 @@
         "drupal/core-dev-pinned": "*",
         "liuggio/fastest": "1.7.1",
         "mglaman/drupal-check": "1.1.2",
+        "mortenson/psalm-plugin-drupal": "dev-master",
         "pheromone/phpcs-security-audit": "dev-main",
         "phpcompatibility/php-compatibility": "9.3.5"
     },
@@ -29,5 +30,5 @@
         "branch-alias": {
             "dev-main": "1.x-dev"
         }
-    }
+           }
 }
