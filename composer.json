@@ -12,6 +12,10 @@
     ],
     "repositories": [
         {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
             "type": "vcs",
             "url": "https://github.com/az-digital/phpcs-security-audit",
             "no-api": true
@@ -22,13 +26,13 @@
         "drupal/console": "1.9.7",
         "drupal/console-dotenv": "0.3.1",
         "drupal/core-dev-pinned": "*",
-        "drupal/devel": "4.1.1",
+        "drupal/devel": "4.1.2",
         "kint-php/kint": "3.3",
         "liuggio/fastest": "1.8.0",
-        "mglaman/phpstan-drupal": "0.12.10",
+        "mglaman/phpstan-drupal": "1.1.1",
         "pheromone/phpcs-security-audit": "dev-main",
         "phpcompatibility/php-compatibility": "9.3.5",
-        "phpstan/phpstan-deprecation-rules": "0.12.6"
+        "phpstan/phpstan-deprecation-rules": "1.0.0"
     },
     "extra": {
         "branch-alias": {
