@@ -22,17 +22,15 @@
         }
     ],
     "require": {
-        "dealerdirect/phpcodesniffer-composer-installer": "0.7.2",
+        "az-digital/migrate_devel": "dev-az-digital",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
         "drupal/config_inspector": "2.1.0",
-        "drupal/console": "1.9.9",
-        "drupal/console-dotenv": "0.3.1",
         "drupal/core-dev-pinned": "*",
         "drupal/devel": "5.1.1",
-        "drupal/migrate_devel": "2.0-alpha2",
         "drupal/upgrade_status": "4.0.0",
         "kint-php/kint": "5.0.5",
         "liuggio/fastest": "1.11.0",
-        "mglaman/phpstan-drupal": "1.1.30",
+        "mglaman/phpstan-drupal": "^1.1.30",
         "pheromone/phpcs-security-audit": "dev-main",
         "phpcompatibility/php-compatibility": "9.3.5",
         "phpstan/phpstan-deprecation-rules": "1.1.3"
