@@ -15,26 +15,22 @@ jobs:
 
       - name: Check for branch in Quickstart repo
         id: check-quickstart-branch
-        env:
-          BRANCH: ${{ github.head_ref }}
         run: |
-          EXISTS=$(gh api repos/az-digital/az_quickstart/branches/$BRANCH -q '.name' || echo '')
+          EXISTS=$(gh api repos/az-digital/az_quickstart/branches/${{ github.head_ref }} -q '.name' || echo '')
           if [[ -z $EXISTS ]]; then
             echo "QUICKSTART_BRANCH_NAME=main" >> $GITHUB_ENV
           else
-            echo "QUICKSTART_BRANCH_NAME=$BRANCH" >> $GITHUB_ENV
+            echo "QUICKSTART_BRANCH_NAME=${{ github.head_ref }}" >> $GITHUB_ENV
           fi
 
       - name: Check for branch in scaffolding repo
         id: check-scaffolding-branch
-        env:
-          BRANCH: ${{ github.head_ref }}
         run: |
-          EXISTS=$(gh api repos/az-digital/az-quickstart-scaffolding/branches/$BRANCH -q '.name' || echo '')
+          EXISTS=$(gh api repos/az-digital/az-quickstart-scaffolding/branches/${{ github.head_ref }} -q '.name' || echo '')
           if [[ -z $EXISTS ]]; then
             echo "SCAFFOLDING_BRANCH_NAME=main" >> $GITHUB_ENV
           else
-            echo "SCAFFOLDING_BRANCH_NAME=$BRANCH" >> $GITHUB_ENV
+            echo "SCAFFOLDING_BRANCH_NAME=${{ github.head_ref }}" >> $GITHUB_ENV
           fi
 
       - name: Checkout scaffolding repo
