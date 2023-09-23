@@ -26,7 +26,6 @@ jobs:
           fi
       - name: Checkout scaffolding repo
         uses: actions/checkout@v4
-        needs: check-scaffolding-branch
         with:
           repository: az-digital/az-quickstart-scaffolding
           ref: ${{ env.SCAFFOLDING_BRANCH_NAME }}
