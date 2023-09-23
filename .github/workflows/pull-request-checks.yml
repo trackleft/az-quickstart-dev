@@ -51,7 +51,6 @@ jobs:
           tools: composer:v2
 
       - name: Build Arizona Quickstart
-        plugin: Script
         run: |
           composer self-update
           cd $HOME/az-quickstart-scaffolding
