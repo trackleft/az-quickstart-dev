@@ -53,7 +53,7 @@ jobs:
       - name: Build Arizona Quickstart
         run: |
           composer self-update
-          cd $HOME/az-quickstart-scaffolding
+          cd $GITHUB_WORKSPACE/az-quickstart-scaffolding
           composer config repositories.az_quickstart vcs https://github.com/az-digital/az_quickstart.git
           composer config use-github-api false
           composer require --no-update drupal/core-recommended:* zaporylie/composer-drupal-optimizations:* az-digital/az_quickstart:dev-${QUICKSTART_BRANCH_NAME}
@@ -62,11 +62,11 @@ jobs:
 
       - name: Run PHPCS
         run: |
-          cd $HOME/az-quickstart-scaffolding
+          cd $GITHUB_WORKSPACE/az-quickstart-scaffolding
           ./vendor/bin/phpcs -sp --colors web/profiles/custom/az_quickstart'
 
       - name: Run PHPStan
         run: |
-          cd $HOME/az-quickstart-scaffolding
+          cd $GITHUB_WORKSPACE/az-quickstart-scaffolding
           ./vendor/bin/phpstan analyse --configuration web/profiles/custom/az_quickstart/phpstan.neon web/profiles/custom/az_quickstart
 
